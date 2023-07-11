@@ -19,3 +19,14 @@ btn.addEventListener('click', populate)
 
 populate()
 
+// Attribution
+document.querySelector('.attribution-circle').addEventListener('mouseenter', function () {
+    document.querySelector('.attribution-content').classList.add('attribution-content-active')
+    console.log('hovering')
+})
+
+document.querySelector('.attribution-content').addEventListener('mouseleave', function () {
+    document.querySelector('.attribution-content').classList.remove('attribution-content-active')
+    console.log('hovering')
+})
+

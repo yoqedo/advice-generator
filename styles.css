@@ -11,6 +11,12 @@
     --bodybg: hsl(218, 23%, 16%);
 }
 
+a {
+    text-decoration: none;
+    color: var(--appbg);
+    padding-left: 20px;
+}
+
 body {
     height: 100vh;
     width: 100%;
