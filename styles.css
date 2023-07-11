@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --advicid: hsl(150, 100%, 66%);
+    --advice: hsl(193, 38%, 86%);
+    --appbg: hsl(217, 19%, 24%);
+    --bodybg: hsl(218, 23%, 16%);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bodybg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.app {
+    max-width: 450px;
+    background-color: var(--appbg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.app p {
+    color: var(--advicid);
+}
+
+.app .advice {
+    color: var(--advice);
+    font-size: 28px;
+}
+
+.app img {
+    padding: 25px 0px;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    background-color: var(--advicid);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 2px 2px 20px var(--advicid);
+}
+
+/* Atribution */
+
+.attribution {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.attribution-circle {
+    height: 80px;
+    width: 80px;
+    border: solid 3px #FF5374;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url('https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.attribution-content {
+    position: fixed;
+    left: 100px;
+    bottom: 100px;
+    background-color: rgb(218, 213, 213);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.attribution-content-active {
+    display: block;
+}
+
+.attrinbution-content-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.attrinbution-content-link:last-child {
+    margin-bottom: 0px;
+}
+
+.attrinbution-content-link img {
+    height: 25px;
+    width: 25px;
+}
+
+.attrinbution-content-link p {
+    padding-left: 10px;
+}
+
+.attrinbution-content-link:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+ion-icon {
+    font-size: 23px;
+    color: black;
+}
